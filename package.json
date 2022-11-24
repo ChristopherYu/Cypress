@@ -1,5 +1,14 @@
 {
   "devDependencies": {
-    "cypress": "^10.11.0"
+    "cypress": "^11.1.0"
+  },
+  "dependencies": {
+    "execa": "^6.1.0",
+    "moment": "^2.29.4"
+  },
+  "scripts": {
+    "cy:run:chrome": "cypress run --browser '/Applications/UserApps/Google Chrome.app/Contents/MacOS/Google Chrome'",
+    "cy:run:firefox": "cypress run --browser /Applications/UserApps/Firefox.app/Contents/MacOS/firefox",
+    "cy:open": "cypress open"
   }
 }
